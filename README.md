@@ -1,46 +1,7 @@
-# Propostas comerciais com Builder e Singleton (Java 17)
+# Builder e Singleton
 
-Aplicação executável em Java 17 puro (sem frameworks) que usa **Builder** para montar propostas
-comerciais válidas e **Singleton** (Initialization-on-demand holder) para a configuração comercial.
-
-## Estrutura
-
-```
-propostas/
-├── README.md
-├── docs/
-│   ├── diagrama-uml.png      # diagrama de classes
-│   ├── captura-saida.png     # captura da saída do programa
-│   └── saida.txt             # saída completa em texto
-└── src/propostas/
-    ├── Aplicacao.java                        # main e ponto de composição
-    ├── configuracao/ConfiguracaoComercial.java   # Singleton (holder idiom)
-    └── proposta/
-        ├── ItemProposta.java                 # record: descrição, quantidade, valor unitário
-        ├── PropostaComercial.java            # produto imutável
-        ├── PropostaBuilder.java              # contrato das etapas
-        ├── PropostaPadraoBuilder.java        # Builder concreto (valida e reinicia)
-        ├── DiretorPropostas.java             # receitas básica e completa
-        └── PropostaInvalidaException.java    # falha de validação
-```
-
-## Compilar e executar
-
-Requer JDK 17 ou superior. A partir da pasta raiz do projeto:
-
-```bash
-mkdir out
-javac -encoding UTF-8 --release 17 -d out $(find src -name '*.java')
-java -Dfile.encoding=UTF-8 -cp out propostas.Aplicacao
-```
-
-No Windows (PowerShell):
-
-```powershell
-mkdir out
-javac -encoding UTF-8 --release 17 -d out (Get-ChildItem -Recurse src -Filter *.java).FullName
-java -Dfile.encoding=UTF-8 -cp out propostas.Aplicacao
-```
+Aplicação executável em Java 17 puro que usa **Builder** para montar propostas
+comerciais válidas e **Singleton** para a configuração comercial.
 
 ## Decisões principais
 
