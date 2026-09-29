@@ -7,9 +7,6 @@ import java.util.List;
 /**
  * Builder concreto: acumula os dados, valida e entrega uma {@link PropostaComercial}.
  *
- * <p>Esta classe NÃO chama ConfiguracaoComercial.getInstancia(). A moeda padrão e o
- * limite de desconto entram pelo construtor (injeção de dependência manual). O
- * Builder continua testável com qualquer limite e não fica acoplado ao Singleton.
  */
 public class PropostaPadraoBuilder implements PropostaBuilder {
 

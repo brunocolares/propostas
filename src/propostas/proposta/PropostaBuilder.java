@@ -4,10 +4,8 @@ import java.math.BigDecimal;
 
 /**
  * Contrato das etapas de construção de uma proposta.
- *
- * <p>Os métodos de configuração retornam o próprio Builder para permitir
- * encadeamento (interface fluente). Ter uma interface permite que o
- * {@link DiretorPropostas} dependa da abstração, não da implementação concreta.
+ * Os métodos de configuração retornam o próprio Builder para permitir
+ * encadeamento
  */
 public interface PropostaBuilder {
 

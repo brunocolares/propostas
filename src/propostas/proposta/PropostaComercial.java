@@ -7,15 +7,6 @@ import java.util.List;
 /**
  * Produto final do Builder: uma proposta comercial imutável.
  *
- * <p>Decisões de projeto:
- * <ul>
- *   <li>A classe é {@code final}, todos os campos são {@code final} e não há setters.</li>
- *   <li>O construtor é package-private: a única forma de obter uma proposta fora
- *       deste pacote é passar pelo Builder, que valida os dados antes.</li>
- *   <li>A lista de itens é copiada com {@link List#copyOf}, que produz uma lista
- *       imutável e desacoplada da lista do Builder. Assim, reutilizar o Builder
- *       para a próxima proposta nunca altera uma proposta já entregue.</li>
- * </ul>
  */
 public final class PropostaComercial {
 

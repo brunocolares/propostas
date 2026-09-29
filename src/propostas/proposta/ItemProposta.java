@@ -6,10 +6,6 @@ import java.util.Objects;
 /**
  * Item de uma proposta: descrição, quantidade e valor unitário.
  *
- * <p>Usamos {@code record} (Java 17) porque o item é um valor imutável sem
- * identidade própria. O construtor compacto garante que nenhum item inválido
- * chegue ao Builder, então a validação do item fica no próprio item.
- * BigDecimal evita os erros de arredondamento de double em valores monetários.
  */
 public record ItemProposta(String descricao, int quantidade, BigDecimal valorUnitario) {
 

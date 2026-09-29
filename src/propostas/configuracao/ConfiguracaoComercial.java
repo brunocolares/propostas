@@ -5,14 +5,6 @@ import java.math.BigDecimal;
 /**
  * Singleton com a configuração comercial da aplicação (moeda padrão e limite de desconto).
  *
- * <p>Técnica: Initialization-on-demand holder. A JVM só carrega a classe interna
- * {@link Holder} na primeira chamada a getInstancia(), e o carregamento de classe é
- * thread-safe por especificação. Resultado: criação preguiçosa e segura sem
- * synchronized, volatile ou double-checked locking.
- *
- * <p>Escopo da unicidade: uma instância POR CLASSLOADER dentro de UMA JVM. Outra JVM,
- * outro servidor ou outro classloader terá a sua própria instância. Não é unicidade
- * global nem distribuída.
  */
 public final class ConfiguracaoComercial {
 

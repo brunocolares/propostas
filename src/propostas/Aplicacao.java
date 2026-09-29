@@ -17,11 +17,6 @@ import java.util.Locale;
 /**
  * Ponto de composição da aplicação.
  *
- * <p>É aqui, e somente aqui, que o Singleton é consultado. Os valores lidos são
- * entregues ao Builder pelo construtor; nenhuma outra classe conhece a
- * ConfiguracaoComercial. Assim os dois padrões ficam com responsabilidades separadas:
- * o Singleton controla A INSTÂNCIA da configuração, o Builder controla COMO cada
- * proposta é montada.
  */
 public class Aplicacao {
 

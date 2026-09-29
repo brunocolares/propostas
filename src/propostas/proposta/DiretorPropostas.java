@@ -6,11 +6,7 @@ import java.util.List;
 /**
  * Director: encapsula receitas prontas de montagem.
  *
- * <p>Ele existe para as combinações que se repetem (proposta básica, proposta
- * completa). Não é obrigatório: quem precisa de uma proposta fora dessas receitas
- * usa o Builder diretamente, como a Aplicacao faz na proposta personalizada.
- * O Director depende da interface {@link PropostaBuilder}, não da classe concreta.
- */
+*/
 public class DiretorPropostas {
 
     private final PropostaBuilder builder;
