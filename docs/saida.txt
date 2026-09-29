@@ -1,0 +1,26 @@
+Mesma configuração? true
+Moeda padrão: BRL
+Limite máximo de desconto: 15%
+
+Proposta básica:
+  Cliente: Metalúrgica Vale do Aço | Responsável: Ana Souza | Validade: 15 dias
+  - Licença anual do sistema de laudos (1 x R$ 4.800,00)
+  Subtotal: R$ 4.800,00
+  Desconto (0%): R$ 0,00
+  Total: R$ 4.800,00
+
+Proposta personalizada:
+  Cliente: Laboratório Aço Norte | Responsável: Carlos Lima | Validade: 30 dias
+  - Desenvolvimento do módulo de relatórios (1 x R$ 12.500,00)
+  - Horas de consultoria (40 x R$ 220,00)
+  - Treinamento da equipe (turma) (2 x R$ 1.900,00)
+  Observações: Pagamento em 3 parcelas iguais; 1ª na assinatura.
+  Subtotal: R$ 25.100,00
+  Desconto (10%): R$ 2.510,00
+  Total com desconto: R$ 22.590,00
+
+Itens da proposta básica após nova montagem: 1
+Lista de itens protegida: alteração externa rejeitada.
+
+Validação: a proposta deve possuir pelo menos um item.
+Validação: o desconto de 20% excede o limite permitido de 15%.
